@@ -1,28 +1,29 @@
-var age;
-var namep;
-var toggle;
-var empty;
-var notInitialize;
-var callback;
+"use strict";
+let age;
+let namep;
+let toggle;
+let empty;
+let notInitialize;
+let callback;
 age = 50;
 namep = "Max";
 toggle = true;
 empty = null;
 notInitialize = undefined;
-callback = function (a) {
+callback = (a) => {
     return 100 + a;
 };
-var anything;
+let anything;
 anything = -20;
 anything = "Text";
 anything = {};
-var some;
+let some;
 some = "Text";
-var str;
+let str;
 if (typeof some === "string") {
     str = some;
 }
-var person;
+let person;
 person = ["Max", 21];
 // func
 var Load;
@@ -30,7 +31,7 @@ var Load;
     Load[Load["LOADING"] = 0] = "LOADING";
     Load[Load["READY"] = 1] = "READY";
 })(Load || (Load = {}));
-var page = {
+const page = {
     state: Load.LOADING,
 };
 if (page.state === Load.LOADING) {
@@ -40,8 +41,8 @@ if (page.state === Load.READY) {
     console.log("Сторінка завантажена");
 }
 //
-var state;
-var literal;
+let state;
+let literal;
 function showMessage(message) {
     console.log(message);
 }
@@ -51,7 +52,7 @@ function calc(num1, num2) {
 function customError() {
     throw new Error("Error");
 }
-var page1 = {
+const page1 = {
     title: "The awesome page",
     likes: 100,
     accounts: ["Max", "Anton", "Nikita"],
@@ -61,7 +62,7 @@ var page1 = {
         updateAt: "2021-05-01",
     },
 };
-var page2 = {
+const page2 = {
     title: "Python or Js",
     likes: 5,
     accounts: ["Alex"],
