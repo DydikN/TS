@@ -11,7 +11,7 @@ toggle = true;
 empty = null;
 notInitialize = undefined;
 callback = (a) => {
-    return 100 + a;
+  return 100 + a;
 };
 let anything;
 anything = -20;
@@ -21,50 +21,52 @@ let some;
 some = "Text";
 let str;
 if (typeof some === "string") {
-    str = some;
+  str = some;
 }
 let person;
 person = ["Max", 21];
 // func
 var Load;
 (function (Load) {
-    Load[Load["LOADING"] = 0] = "LOADING";
-    Load[Load["READY"] = 1] = "READY";
+  Load[(Load["LOADING"] = 0)] = "LOADING";
+  Load[(Load["READY"] = 1)] = "READY";
 })(Load || (Load = {}));
 const page = {
-    state: Load.LOADING,
+  state: Load.LOADING,
 };
 if (page.state === Load.LOADING) {
-    console.log("Сторінка завантажується");
+  console.log("Сторінка завантажується");
 }
 if (page.state === Load.READY) {
-    console.log("Сторінка завантажена");
+  console.log("Сторінка завантажена");
 }
 //
 let state;
 let literal;
 function showMessage(message) {
-    console.log(message);
+  console.log(message);
 }
 function calc(num1, num2) {
-    return num1 + num2;
+  return num1 + num2;
 }
 function customError() {
-    throw new Error("Error");
+  throw new Error("Error");
 }
 const page1 = {
-    title: "The awesome page",
-    likes: 100,
-    accounts: ["Max", "Anton", "Nikita"],
-    status: "open",
-    details: {
-        createAt: "2021-01-01",
-        updateAt: "2021-05-01",
-    },
+  title: "The awesome page",
+  likes: 100,
+  accounts: ["Max", "Anton", "Nikita"],
+  status: "open",
+  details: {
+    createAt: "2021-01-01",
+    updateAt: "2021-05-01",
+  },
 };
 const page2 = {
-    title: "Python or Js",
-    likes: 5,
-    accounts: ["Alex"],
-    status: "close",
+  title: "Python or Js",
+  likes: 5,
+  accounts: ["Alex"],
+  status: "close",
 };
+
+const app = { name, password };
